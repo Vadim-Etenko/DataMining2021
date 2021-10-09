@@ -1,6 +1,5 @@
-package build_histograms;
+package laba1.build_histograms;
 
-import csv_object.Mail;
 import org.jfree.chart.ChartFactory;
 import org.jfree.chart.ChartUtils;
 import org.jfree.chart.JFreeChart;

@@ -1,6 +1,6 @@
-package handler;
+package laba1.handler;
 
-import csv_object.Mail;
+import laba1.csv_object.Mail;
 
 import java.util.List;
 import java.util.Locale;

@@ -1,6 +1,6 @@
-package build_histograms;
+package laba1.build_histograms;
 
-import csv_object.Mail;
+import laba1.csv_object.Mail;
 
 import java.io.IOException;
 import java.util.ArrayList;

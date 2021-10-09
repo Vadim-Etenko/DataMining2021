@@ -1,11 +1,11 @@
-package build_histograms;
+package laba1.build_histograms;
 
-import csv_object.Mail;
+import laba1.csv_object.Mail;
 import org.jfree.chart.ChartFactory;
 import org.jfree.chart.ChartUtils;
 import org.jfree.chart.JFreeChart;
 import org.jfree.data.category.DefaultCategoryDataset;
-import words_counter.WordsCounter;
+import laba1.words_counter.WordsCounter;
 
 import java.io.File;
 import java.io.IOException;

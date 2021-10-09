@@ -1,7 +1,7 @@
-package parsers;
+package laba1.parsers;
 
 import au.com.bytecode.opencsv.CSVReader;
-import csv_object.Mail;
+import laba1.csv_object.Mail;
 
 import java.io.FileReader;
 import java.util.ArrayList;
@@ -26,7 +26,6 @@ public class ParserCsvToList {
                     nextLine[indexType],
                     nextLine[indexValue]));
         }
-
         return mailList;
     }
 

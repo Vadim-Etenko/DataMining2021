@@ -1,10 +1,10 @@
-package build_histograms;
+package laba1.build_histograms;
 
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
-import csv_object.Mail;
+import laba1.csv_object.Mail;
 
 
 public class BuildHistogramWordLength extends BuildHistogram {

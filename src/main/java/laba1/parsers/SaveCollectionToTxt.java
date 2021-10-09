@@ -1,12 +1,9 @@
-package parsers;
+package laba1.parsers;
 
-import au.com.bytecode.opencsv.CSVReader;
-import csv_object.Mail;
+import laba1.csv_object.Mail;
 
-import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
-import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;

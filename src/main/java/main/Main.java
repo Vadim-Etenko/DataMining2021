@@ -1,15 +1,19 @@
 package main;
 
-import build_histograms.BuildHistogramSentenceLength;
-import build_histograms.BuildHistogramWordLength;
-import build_histograms.BuildHistogramWordsCounter;
-import csv_object.Mail;
-import handler.MainHandler;
-import parsers.ParserCsvToList;
-import parsers.SaveCollectionToTxt;
-import words_counter.WordsCounter;
+import laba1.build_histograms.BuildHistogramSentenceLength;
+import laba1.build_histograms.BuildHistogramWordLength;
+import laba1.build_histograms.BuildHistogramWordsCounter;
+import laba1.csv_object.Mail;
+import laba1.handler.MainHandler;
+import laba1.parsers.ParserCsvToList;
+import laba1.parsers.SaveCollectionToTxt;
+import laba1.words_counter.WordsCounter;
+import laba2.counter.WordCounterLaba2;
+import laba2.txt_reader.TxtReader;
 
+import java.util.ArrayList;
 import java.util.List;
+import java.util.Scanner;
 import java.util.stream.Collectors;
 
 public class Main {
@@ -55,5 +59,15 @@ public class Main {
         BuildHistogramWordsCounter.build(spamMail, OUTPUT_DIRECTORY + "spamMostFrequentWords.PNG");
         BuildHistogramWordsCounter.build(hamMail, OUTPUT_DIRECTORY + "hamMostFrequentWords.PNG");
 
+
+        System.out.println("¬ведите файл дл€ поиска" + System.lineSeparator() + "1 - spam" + System.lineSeparator() + "2 - ham");
+        Scanner scanner = new Scanner(System.in);
+        int type = scanner.nextInt();
+
+        System.out.println("¬ведите сообщение дл€ поиска");
+        String message = scanner.next();
+
+        new WordCounterLaba2(spamMail, hamMail).handle(type,message);
     }
+
 }

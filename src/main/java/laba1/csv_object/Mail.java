@@ -1,4 +1,4 @@
-package csv_object;
+package laba1.csv_object;
 
 public class Mail {
 
